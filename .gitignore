@@ -31,4 +31,5 @@ sysinfo.txt
 *.unitypackage
 
 #Hamster5295
-Run.bat
+Push-Master.bat
+Push-UI.bat
