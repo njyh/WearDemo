@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class UpRoleInfoCtrl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public ProgressBar p;
+
+    private int value;
+
+    public void setValue(int value){
+        p.SetProgress(value);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int getValue(){
+        return Mathf.RoundToInt(p.slider.value);
     }
 }

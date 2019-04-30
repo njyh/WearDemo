@@ -477,6 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 70212223}
+  - component: {fileID: 70212224}
   m_Layer: 5
   m_Name: Armor
   m_TagString: Untagged
@@ -505,6 +506,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &70212224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70212222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e26d57fe004a94bba36c60051af176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 182326401}
 --- !u!1 &80527585
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174788559}
   - component: {fileID: 174788560}
+  - component: {fileID: 174788561}
   m_Layer: 5
   m_Name: ProgressBar
   m_TagString: Untagged
@@ -936,6 +951,22 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &174788561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174788558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b00e21d29993047bccf0c75a195aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 174788560}
+  index: 0
+  speed: 0
+  fill: {fileID: 362918930}
 --- !u!1 &182326398
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 182326399}
   - component: {fileID: 182326400}
+  - component: {fileID: 182326401}
   m_Layer: 5
   m_Name: ProgressBar
   m_TagString: Untagged
@@ -1026,6 +1058,22 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &182326401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182326398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b00e21d29993047bccf0c75a195aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 182326400}
+  index: 0
+  speed: 0
+  fill: {fileID: 12034544}
 --- !u!1 &194946432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,7 +3174,7 @@ RectTransform:
   m_AnchorMin: {x: 0.09625942, y: 0}
   m_AnchorMax: {x: 0.09625942, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899548870
 MonoBehaviour:
@@ -3148,7 +3196,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f16e4bea259f3f84cbd864c51db1e4c5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3526,6 +3574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1059607697}
+  - component: {fileID: 1059607698}
   m_Layer: 5
   m_Name: Action
   m_TagString: Untagged
@@ -3554,6 +3603,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1059607698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059607696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e26d57fe004a94bba36c60051af176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 174788561}
 --- !u!1 &1066576106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5180,6 +5242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566754190}
   - component: {fileID: 1566754191}
+  - component: {fileID: 1566754192}
   m_Layer: 5
   m_Name: ProgressBar
   m_TagString: Untagged
@@ -5260,6 +5323,22 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1566754192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566754189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b00e21d29993047bccf0c75a195aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1566754191}
+  index: 0
+  speed: 0
+  fill: {fileID: 1948241832}
 --- !u!1 &1578189191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6055,6 +6134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1743766494}
+  - component: {fileID: 1743766495}
   m_Layer: 5
   m_Name: Hp
   m_TagString: Untagged
@@ -6083,6 +6163,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1743766495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743766493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e26d57fe004a94bba36c60051af176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 1566754192}
 --- !u!1 &1807663326
 GameObject:
   m_ObjectHideFlags: 0

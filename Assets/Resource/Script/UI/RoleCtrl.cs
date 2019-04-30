@@ -19,17 +19,17 @@ public class RoleCtrl : MonoBehaviour
         StartCoroutine(AutoHide());
     }
 
-    public void setRoleImage(Sprite img)
+    public void SetRoleImage(Sprite img)
     {
         RoleImg.sprite = img;
     }
 
-    public void setItemImage(Sprite img)
+    public void SetItemImage(Sprite img)
     {
         ItemImg.sprite = img;
     }
 
-    public void setSkillImage(Sprite img)
+    public void SetSkillImage(Sprite img)
     {
         SkillImg.sprite = img;
     }
@@ -44,7 +44,7 @@ public class RoleCtrl : MonoBehaviour
         SkillText.enabled = true;
     }
 
-    public void setAutoHide(bool a)
+    public void SetAutoHide(bool a)
     {
         isAutoHide = a;
     }
