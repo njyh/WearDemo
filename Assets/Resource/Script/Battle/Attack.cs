@@ -9,23 +9,12 @@ public class Attack : MonoBehaviour
     public bool attack = false;
     public Text DebugInfo;
     public Texture2D DefCur;
-    // Start is called before the first frame update
-    public void setattack(bool b)
+
+    public void setAttack(bool b)
     {
         attack = b;
     }
-    void Start()
-    {
-	
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-
-    }
+    
     public void SetCursor(Texture2D texture)
     {
         Cursor.SetCursor(texture, Vector2.zero, CursorMode.Auto);
