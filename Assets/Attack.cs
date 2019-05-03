@@ -6,24 +6,48 @@ using UnityEngine.UI;
 
 public class Attack : MonoBehaviour
 {
-	private LineRenderer lineRederer;
+    public bool attack = false;
+    public Text DebugInfo;
+    public Texture2D DefCur;
     // Start is called before the first frame update
+    public void setattack(bool b)
+    {
+        attack = b;
+    }
     void Start()
     {
-	lineRederer = GetComponent<LineRenderer>();
-
-	lineRederer.enabled = true;
-
-	lineRederer.useWorldSpace = true;
+	
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        lineRederer.SetPosition(0,transform.position);
+       
 
-            lineRederer.SetPosition(1, Input.mousePosition);
-
+    }
+    public void SetCursor(Texture2D texture)
+    {
+        Cursor.SetCursor(texture, Vector2.zero, CursorMode.Auto);
+        
+        
+    }
+    public void dt(string text)
+    {
+        DebugInfo.text = text;
+    }
+    public void OnAttack(string name)
+    {
+        if (attack)
+        {
+            dt("你成功的向" + name + "造成了？点伤害");
+            
+            SetCursor(DefCur);
+            attack = false;
+        }
+        else
+        {
+            dt("不在攻击模式，请选择角色再发动攻击");
+        }
     }
 }
